@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Singup = () => {
   return (
@@ -6,4 +6,4 @@ const Singup = () => {
   )
 }
 
-export default Singup
+export default Singup;

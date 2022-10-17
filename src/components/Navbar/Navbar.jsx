@@ -2,10 +2,11 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({children}) => {
   return (
+    <>
     <nav className='navbar'>
-        <h3 className='navbar__logo'>eduardo5andoval</h3>
+        <h3 className='navbar__logo'>sandov</h3>
         <ul className='navbar__links'>
             <Link to="/" className='home'>
                 <li>Home</li>
@@ -24,7 +25,10 @@ const Navbar = () => {
             </Link>
 
         </ul>
+        
     </nav>
+    {children}
+    </>
   )
 }
 
