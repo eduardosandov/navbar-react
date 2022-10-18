@@ -8,8 +8,8 @@ const Navbar = ({ children }) => {
         <>
             <nav className='navbar'>
                 <h3 className='navbar__logo'>sandov</h3>
-                <ul className= {isMobile ? "navbar__links-mobile" : "navbar__links"}
-                onClick={() => setIsMobile(false)}
+                <ul className={isMobile ? "navbar__links-mobile" : "navbar__links"}
+                    onClick={() => setIsMobile( false )}
                 >
                     <Link to="/" className='home'>
                         <li>Home</li>
@@ -31,11 +31,7 @@ const Navbar = ({ children }) => {
                 <button className="mobile-menu-icon"
                     onClick={() => setIsMobile(!isMobile)}
                 >
-                    {isMobile ? ( 
-                    <i className="fas fa-times"></i>
-                    ) : (
-                        <i className="fas fa-bars"></i>
-                    )}
+                    {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
                 </button>
 
             </nav>
@@ -44,4 +40,4 @@ const Navbar = ({ children }) => {
     )
 }
 
-export default Navbar
+export default Navbar;
